@@ -8,3 +8,21 @@
     - transmission-cli
     - transmission-common
     - transmission-daemon
+
+- name: Stop Service | transmission
+  service:
+    state: stopped
+    name: transmission-daemon
+
+- name: Upload Config | transmission
+  template:
+    src: etc/transmission-daemon/settings.json
+    dest: /etc/transmission-daemon/settings.json
+    owner: debian-transmission
+    group: debian-transmission
+    mode: 0600
+
+- name: Start Service | transmission
+  service:
+    state: started
+    name: transmission-daemon
