@@ -1,4 +1,8 @@
 ---
+dependencies:
+  - role: telusdigital.apt-repository
+    repository_url: "deb http://ppa.launchpad.net/transmissionbt/ppa/ubuntu trusty main"
+    repository_key: "0xa37da909ae70535824d82620976b5901365c5ca1"
 galaxy_info:
   author: "Steven Harradine"
   categories:

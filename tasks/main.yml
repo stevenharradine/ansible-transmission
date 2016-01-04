@@ -1,1 +1,10 @@
 ---
+- name: install software | apt
+  apt:
+    pkg: "{{ item }}"
+    state: latest
+    update_cache: yes
+  with_items:
+    - transmission-cli
+    - transmission-common
+    - transmission-daemon
