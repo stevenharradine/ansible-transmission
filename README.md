@@ -7,9 +7,15 @@
 
 Tunables
 --------
+* `transmission_rpc_port` (integer) - the port to listen on
+* `transmission_rpc_whitelist` (ip address/cidr): who can access this server
 
 Example Playbook
 ----------------
+    - hosts: servers
+      roles:
+        - role: stevenharradine.transmission
+          transmission_rpc_whitelist: "*"
 
 Contributors
 ------------
