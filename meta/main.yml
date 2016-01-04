@@ -1,0 +1,12 @@
+---
+galaxy_info:
+  author: "Steven Harradine"
+  categories:
+    - cloud
+  description: "Ansible role to set up and configure transmission a web based torrent manager."
+  license: ISC License
+  min_ansible_version: 1.2
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
